@@ -4,7 +4,7 @@ google = @google
 
 picker_options = @lowtone_google_picker
 
-$.fn.picker = (method) ->
+$.fn.google_picker = (method) ->
 	defaults = {}
 
 	picker_callback = (data, options) ->
@@ -66,7 +66,7 @@ $.fn.picker = (method) ->
 
 google.setOnLoadCallback ->
 	$ ->
-		$('.lowtone.google.picker').picker()
+		$('.lowtone.google.picker').google_picker()
 
 load_options = 
 	language: picker_options.language

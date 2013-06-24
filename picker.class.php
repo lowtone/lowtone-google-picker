@@ -117,7 +117,7 @@ class Picker extends Record {
 
 		$pickerId = "lowtone_google_picker_" . $this->{self::PROPERTY_ID};
 
-		wp_enqueue_script("lowtone_google_picker", LIB_URL . "/lowtone-google-picker/assets/scripts/jquery.picker.js", array("jquery", "google-jsapi"));
+		wp_enqueue_script("lowtone_google_picker", LIB_URL . "/lowtone-google-picker/assets/scripts/jquery.google-picker.js", array("jquery", "google-jsapi"));
 		wp_localize_script("lowtone_google_picker", "lowtone_google_picker", array(
 				"ajaxurl" => admin_url("admin-ajax.php"),
 				"language" => reset(explode("_", get_locale())),
